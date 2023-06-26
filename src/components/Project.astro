@@ -1,0 +1,26 @@
+---
+export interface Props {
+	title: string;
+	description: string;
+	image: string;
+	url: string;
+	reverse?: boolean;
+}
+
+const { title, description, image, url, reverse } = Astro.props;
+---
+
+<div
+	class=`w-full flex flex-col lg:flex-row ${reverse ? 'lg:flex-row-reverse': ''}`
+>
+	<img src={image} alt={title} class="w-full lg:w-1/2 max-h-100" />
+	<div class="flex flex-col justify-center items-center gap-4 p-4">
+		<h3 class="font-primary text-4xl">{title}</h3>
+		<p>{description}</p>
+		<a
+			href={url}
+			target="_blank"
+			class="block text-white font-secondary bg-brand p-2 px-8 w-fit">Visit</a
+		>
+	</div>
+</div>

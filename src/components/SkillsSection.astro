@@ -1,0 +1,26 @@
+---
+import Skill from "./skills/skill.astro";
+---
+
+<section
+	id="skills"
+	class="w-full bg-neutral-950 text-center text-white lg:text-left p-4 pt-16"
+>
+	<div class="m-auto max-w-4xl">
+		<h2 class="font-primary text-5xl pb-4">Skills</h2>
+		<div id="skill-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+			<Skill skill="Vue.js" icon="vuejs" />
+			<Skill skill="React" icon="react" />
+			<Skill
+				skill={`JavaScript &
+		TypeScript`}
+				icon="js"
+			/>
+			<Skill skill="Sass" icon="sass" />
+			<Skill skill="CSS" icon="css3-alt" />
+			<Skill skill="HTML" icon="html5" />
+			<Skill skill="Git" icon="git" />
+			<Skill skill="Figma" icon="figma" />
+		</div>
+	</div>
+</section>

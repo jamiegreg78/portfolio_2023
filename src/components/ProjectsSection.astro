@@ -1,0 +1,27 @@
+---
+import Project from "./Project.astro";
+---
+
+<section
+	id="projects"
+	class="w-full bg-neutral-950 text-center text-white py-4 pt-16"
+>
+	<div class="m-auto max-w-4xl">
+		<h2 class="font-primary text-brand text-5xl pb-4 lg:text-left">Projects</h2>
+		<div class="w-full grid grid-cols-1 gap-12">
+			<Project
+				title="Space Tourism"
+				description="This site was developed using designs provided by Frontend Mentor. I used this project as an opportunity to learn Astro, and re-familiarise myself with the design to code process. "
+				image="/space_screenshot.png"
+				url="https://space-tourism-astro-five.vercel.app/"
+			/>
+			<Project
+				title="Space Tourism"
+				description="This site was developed using designs provided by Frontend Mentor. I used this project as an opportunity to learn Astro, and re-familiarise myself with the design to code process. "
+				image="/space_screenshot.png"
+				url="https://space-tourism-astro-five.vercel.app/"
+				reverse
+			/>
+		</div>
+	</div>
+</section>
